@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mamasliama/components/Buttons/custom_button.dart';
 import 'package:mamasliama/components/TextField/custom_textfield.dart';
 import 'package:mamasliama/screens/Authscreen/signupScreen/signup_screen.dart';
+import 'package:mamasliama/screens/HomePage/bottomNav/bottomNavScreen.dart';
 import 'package:mamasliama/utils/color_utils.dart';
 import 'package:mamasliama/utils/image_utils.dart';
 import 'package:mamasliama/utils/size_utils.dart';
@@ -70,7 +70,9 @@ class LoginScreen extends StatelessWidget {
                           height: 51,
                           borderRadius: 300,
                           color: ClrUtls.secondaryDark,
-                          onPressed: () {}),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavScreen()));
+                          }),
                       SizedBox(
                         height: 20,
                       ),
